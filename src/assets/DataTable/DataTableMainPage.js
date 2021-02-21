@@ -13,14 +13,21 @@ function DataTableMainPage({dataSet}) {
     }, [dataSet]);
 
     const [filteredDataSet,setFilteredDataSet] = useState(dataSet);
+
+    // function for handling search
     function handleSearch(e,curMetric){
         const options = {
             keys: [
                 curMetric
             ]
         }
-        const fuse = new Fuse(dataSet,options);
-        setFilteredDataSet(fuse.search(e.target.value).map(result=>result.item))
+        //if user hasn't entered anything
+        if(e.target.value == null || e.target.value.trim().length == 0){
+            setFilteredDataSet(dataSet)
+        }else{
+            const fuse = new Fuse(dataSet,options);
+            setFilteredDataSet(fuse.search(e.target.value).map(result=>result.item))
+        }
     }
    
     return (

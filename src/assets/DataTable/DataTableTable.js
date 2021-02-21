@@ -1,7 +1,6 @@
 import React, {memo} from 'react'
 
 function DataTableTable({dataSet,metrics}) {
-    console.log(dataSet)
     if(metrics == null){    //API has not fetched data yet
         return (
         <span className="material-icons loader">

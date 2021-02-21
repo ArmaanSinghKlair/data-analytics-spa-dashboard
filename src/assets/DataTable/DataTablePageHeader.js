@@ -11,7 +11,7 @@ function DataTablePageHeader({handleSearch, metrics}) {
         <div className="datatable__pageheader flex flex-row">
             <div className="datatable__pageheader__searchbar flex flex-row">
                 <label for="search"><i className="material-icons">search</i></label>
-                <input type="text" onKeyUp={(e)=>handleSearch(e,curMetric)} id="search" placeholder="Search by metric" autoComplete="off"/>
+                <input type="text" onKeyUp={(e)=>handleSearch(e,curMetric)} onFocus={(e)=>handleSearch(e,curMetric)} id="search" placeholder="Search by metric" autoComplete="off"/>
             </div>
             <select onChange={e=>setCurMetric(e.target.value)}>
                     {
