@@ -1,0 +1,25 @@
+.generalpage__chartselector{
+    grid-area: chartselector;
+    background: var(--main-text-color);
+    color: white;
+    box-shadow: 1px 1px 0.3rem 1px rgb(219 219 219)
+}
+
+.curChart{
+    color: var(--main-text-color) !important;
+    background: white;
+}
+
+.generalpage__chart__link{
+    text-align: center;
+    color: var(--main-bg-text);
+    padding: 1vmin 0;
+    justify-content: space-between;
+    cursor:pointer;
+}
+.generalpage__chart__link .material-icons{
+    font-weight: bold;
+}
+.generalpage__chart__link:hover:not(.curChart){
+    opacity: 0.7;
+}

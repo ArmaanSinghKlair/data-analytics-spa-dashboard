@@ -1,0 +1,25 @@
+.homepage__option{
+    border-radius:1.5rem;
+    padding:2vmax;
+    height: 100%;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    background: var(--main-bg-color);
+
+}
+.homepage__option h1{
+    text-transform: capitalize;
+}
+.homepage__option:hover{
+    box-shadow: 0 0 2rem 0.5rem rgba(19,15,73,0.2);
+    transform: scale(1.01);
+}
+.go{
+    background:var(--main-text-color);
+    color:white !important;
+    display: inline;
+    width:40%;
+    text-align: center;
+    padding: 1vmin;
+    border-radius:1rem;
+}

@@ -1,0 +1,33 @@
+.generalpage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 7.5fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "chartselector sidebar heading" "chartselector sidebar mainpage";
+    background: #fafafa;
+}
+
+.generalpage > .generalpage__mainpage{
+    border-radius: 1rem;
+    border:solid 1px lightgray;
+}
+
+.generalpage__heading{
+    grid-area:heading;
+    border:none;
+    text-align:center;
+    font-size:2rem;
+    font-weight: bold;
+    background: white;
+    padding: 1vmax;
+    box-shadow: 1px 1px 1rem 0.01rem grey;
+}
+
+input[type="range"]{
+    width:100%;
+}

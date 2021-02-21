@@ -1,0 +1,20 @@
+.generalmap__map{
+    height: 100%;
+    width: 100%;
+}
+
+#map{
+    height: 500px;
+    width: 700px;
+    margin: auto;
+}
+.generalpage__info{
+    min-height:1vmax;
+    width:200px;
+    background: linear-gradient(to right, red 0%, yellow 100%);
+    margin:1vmax auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2px 1rem;
+}

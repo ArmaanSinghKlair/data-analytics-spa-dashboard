@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;   /* 1rem = 10px  */
+}
+html,body{
+  height:100%;
+  width:100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div{
+  --main-bg-color: #D9F4FF;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root{
+  --main-text-color: #130F49;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a, p, span, li, ul, tr, td, section, article, header, footer{
+  font-size: 1.7rem;;
+  color: var(--main-text-color) important !important;
+}
+a{
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,.heading, .important{
+  font-size:3rem;
+}
+.flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-row{
+  flex-flow: row wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-column{
+  flex-flow: column wrap;
+}
+
+.App{
+  width:inherit;
+  height: inherit;
+  padding: 2vmax auto;
+  position: relative;
+}
+#root{
+  height:inherit;
+  width: inherit;
+}
+
+.selectable{
+  cursor:pointer;
+}
+
+hr{
+  border-radius:50%;
+}
+.centered{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }

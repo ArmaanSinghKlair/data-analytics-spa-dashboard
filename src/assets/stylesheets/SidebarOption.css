@@ -1,0 +1,21 @@
+.sidebaroption{
+    padding: 1vmin 1vmax;
+    font-size:1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.2s;
+    color: var(--main-text-color);
+}
+.sidebaroption:hover:not(.selected){
+    opacity:0.7;
+}
+.sidebaroption > *{
+    margin-left: 1vmin;
+}
+
+.selected{
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+    border-right: solid 0.5rem var(--main-text-color)
+}

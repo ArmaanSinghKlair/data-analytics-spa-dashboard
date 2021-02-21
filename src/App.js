@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {useMemo} from "react"
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import HomePage from './assets/HomePage';
+import GeneralPage from './assets/GeneralPage/GeneralPage'
+import DataTable from './assets/DataTable/DataTable'
 function App() {
+  const routes = useMemo(()=>{
+    return [{
+        path:"/general",
+        render:()=>(
+            <GeneralPage />
+        )
+    },
+    {
+      path:"/datatable",
+      render:()=>(
+          <DataTable />
+      )
+  },
+{
+  path: "*",
+  render:()=>(
+    <HomePage />
+  )
+}]
+},[])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          {routes.map((route,i)=>(
+            <Route {...route} key={i}/>
+          ))}
+        </Switch>
+      </Router>
     </div>
   );
 }

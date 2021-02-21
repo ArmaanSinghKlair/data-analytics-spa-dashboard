@@ -1,0 +1,92 @@
+.geovisual__mainpage{
+    grid-area: mainpage;
+    overflow-y:auto;
+    padding: 1vmax;
+    position:relative;
+    flex-wrap: nowrap;
+    background: white;
+    margin: 2vmax;
+}
+
+.geovisual__pageheader{
+    height:10vh;
+    justify-content: space-between;
+    align-items: center;
+    z-index:2;
+}
+
+.geovisual__pageheader__searchbar{
+    flex-grow: 1;
+    border: solid 1px lightgray;
+    margin: 0 1vmax;
+    padding: 1vmin 2vmax;
+    border-radius: 4rem;
+}
+
+
+
+.loader{
+    animation-name:spin;
+    animation-timing-function: linear;
+    animation-duration:0.7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    transform: rotateZ(0deg);
+    transform-origin: center center;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotateZ(45deg);
+    }
+    25%{
+        transform: rotateZ(90deg);
+    }
+    50%{
+        transform: rotateZ(135deg);
+    }
+    75%{
+        transform: rotateZ(180deg);
+    }
+    100%{
+        transform: rotateZ(225deg);
+    }
+}
+
+
+.controls{
+    justify-content: space-around;
+}
+
+.controls label{
+    font-size: 1.5rem;
+}
+
+.controls input[list],select{
+    padding: 1vmin 2vmax;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    color: var(--main-text-color);
+    outline: none;
+    width: 10vw;
+    border: solid 1px var(--main-text-color);
+}
+
+.controls .control{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.controls .control>*{
+    margin:0 1vmin;
+}
+
+button{
+    padding:1vmin 2vmax;
+    font-size: 1.5rem;
+    background: var(--main-text-color);
+    border:none;
+    border-radius:2rem;
+    color: white;
+    outline:none;   
+}

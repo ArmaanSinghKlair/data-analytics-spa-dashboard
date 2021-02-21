@@ -1,0 +1,9 @@
+.datatable__sidebar{
+    grid-area:sidebar;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: white;
+    border-radius: 0;
+    box-shadow:1px 1px 0.3rem 1px rgb(219 219 219);
+    z-index:1;
+}
