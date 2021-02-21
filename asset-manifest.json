@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/data-analytics-spa-dashboard/static/css/main.eec3a5be.chunk.css",
+    "main.js": "/data-analytics-spa-dashboard/static/js/main.b4b3e32c.chunk.js",
+    "main.js.map": "/data-analytics-spa-dashboard/static/js/main.b4b3e32c.chunk.js.map",
+    "runtime-main.js": "/data-analytics-spa-dashboard/static/js/runtime-main.a0bce4dd.js",
+    "runtime-main.js.map": "/data-analytics-spa-dashboard/static/js/runtime-main.a0bce4dd.js.map",
+    "static/js/2.fc08af10.chunk.js": "/data-analytics-spa-dashboard/static/js/2.fc08af10.chunk.js",
+    "static/js/2.fc08af10.chunk.js.map": "/data-analytics-spa-dashboard/static/js/2.fc08af10.chunk.js.map",
+    "static/js/3.b3fdc6a8.chunk.js": "/data-analytics-spa-dashboard/static/js/3.b3fdc6a8.chunk.js",
+    "static/js/3.b3fdc6a8.chunk.js.map": "/data-analytics-spa-dashboard/static/js/3.b3fdc6a8.chunk.js.map",
+    "index.html": "/data-analytics-spa-dashboard/index.html",
+    "static/css/main.eec3a5be.chunk.css.map": "/data-analytics-spa-dashboard/static/css/main.eec3a5be.chunk.css.map",
+    "static/js/2.fc08af10.chunk.js.LICENSE.txt": "/data-analytics-spa-dashboard/static/js/2.fc08af10.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a0bce4dd.js",
+    "static/js/2.fc08af10.chunk.js",
+    "static/css/main.eec3a5be.chunk.css",
+    "static/js/main.b4b3e32c.chunk.js"
+  ]
+}
